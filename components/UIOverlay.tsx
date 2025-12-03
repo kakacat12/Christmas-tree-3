@@ -53,7 +53,12 @@ export const UIOverlay: React.FC<UIOverlayProps> = ({ mode, onToggle, onPhotosUp
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#F5E6BF] to-[#D4AF37] font-serif drop-shadow-lg tracking-wider text-center">
           Merry Christmas
         </h1>
-        
+
+        {/* 在这里插入祝福语 */}
+        <p className="mt-2 text-base md:text-lg font-serif text-[#F5E6BF] tracking-widest text-center drop-shadow-md">
+          Wishing all SBS students and staff a joyful holiday season!
+        </p>
+
         {/* Upload Button - Only show when no photos uploaded */}
         {!hasPhotos && (
           <div className="mt-6 pointer-events-auto">
@@ -70,7 +75,7 @@ export const UIOverlay: React.FC<UIOverlayProps> = ({ mode, onToggle, onPhotosUp
               className="group px-8 py-3 border-2 border-[#D4AF37] bg-black/50 backdrop-blur-md overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_#D4AF37] hover:border-[#fff] hover:bg-[#D4AF37]/20"
             >
               <span className="relative z-10 font-serif text-lg md:text-xl text-[#D4AF37] tracking-[0.1em] group-hover:text-white transition-colors">
-                上传照片
+                Upload Your Pictures
               </span>
             </button>
           </div>
